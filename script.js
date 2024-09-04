@@ -59,3 +59,8 @@ $(document).ready(function(){
         });
     });
 });
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevents the form from submitting the traditional way
+    document.getElementById("successCard").style.display = "block"; // Shows the success message card
+    document.getElementById("contactForm").reset(); // Clears the form fields
+});
